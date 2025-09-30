@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go mod:*)",
+      "Bash(go build:*)",
+      "Bash(./k8s-mcp-server --mode stdio)",
+      "Bash(python:*)",
+      "Bash(test:*)",
+      "Read(//c/Users/manir/.kube/**)",
+      "Bash($env:HOME = \"C:\\Users\\manir\")",
+      "Bash(./k8s-mcp-server --mode sse --port 8080)",
+      "Bash(curl -X POST http://localhost:8080/mcp -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"id\"\":1,\"\"method\"\":\"\"tools/list\"\",\"\"params\"\":{}}')",
+      "Bash(./k8s-mcp-server --mode streamable-http --port 8080)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
